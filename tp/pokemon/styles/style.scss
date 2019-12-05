@@ -22,8 +22,8 @@
 
 body {
     background-color: #9ACD32;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     border-style: solid;
     border-width: 10px;
     border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
@@ -36,8 +36,10 @@ body {
 
     @include landscape(){
         display: flex;
-        height: 100vh;
-        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
     }
 }
 
@@ -51,13 +53,15 @@ img {
   }
 
 //   2 main sections
+
+
 @include landscape(){
     .pokemon__introduction {
     
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width:50%;
+        max-width:50%;
         
     }
     
@@ -66,7 +70,8 @@ img {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width:50%;
+        max-width:50%;
+        
     }
     
 }
@@ -134,7 +139,7 @@ img {
     background: linear-gradient(to right, #FDEC00, #7A751E);
     font-size: 11px;
     text-align: center;
-    padding: 3px 0;
+    padding: 3px;
     margin: 0 20px;
 }
 
