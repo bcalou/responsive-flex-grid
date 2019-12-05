@@ -55,22 +55,27 @@ img {
 .attacks__attack {
   display: flex;
   margin: 40px 0; }
-  .attacks__attack .attack__cost {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0; }
-  .attacks__attack .attack__description .attack__name {
-    font-size: 14px;
-    font-weight: bold; }
-  .attacks__attack .attack__description .attack__details {
-    font-size: 10px; }
-  .attacks__attack .attack__damage {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    font-size: 20px; }
-  .attacks__attack .attack__cost, .attacks__attack .attack__damage {
-    padding: 15px; }
+
+.attack__cost {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; }
+
+.attack__name {
+  font-size: 14px;
+  font-weight: bold; }
+
+.attack__details {
+  font-size: 10px; }
+
+.attack__damage {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 20px; }
+
+.attack__cost, .attack__damage {
+  padding: 15px; }
 
 .stats {
   display: flex;
@@ -79,12 +84,13 @@ img {
   font-size: 10px;
   border-top: 2px solid black;
   margin: 0 5px; }
-  .stats .stat {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2px; }
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px; }
 
 .infos {
   border-width: 3px;

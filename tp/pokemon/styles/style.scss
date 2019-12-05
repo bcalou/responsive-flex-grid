@@ -25,16 +25,14 @@ img {
   
 // mixin for Display flex properties
 
-@mixin flexible(){
-    display: flex;
-}
+
 @mixin centered(){
-    @include flexible();
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 @mixin space-between(){
-    @include flexible();
+    display: flex;
     justify-content: space-between;
 }
 
@@ -93,33 +91,32 @@ img {
 .attacks__attack {
     display: flex;
     margin: 40px 0;
-    .attack__cost {
-        @include flexible();
-        align-items: center;
-        flex-shrink:0;
-    }
-    .attack__description {
-        .attack__name {
-            font-size : 14px;
-            font-weight: bold;
-        }
-        .attack__details {
-            font-size: 10px;
-        }
-    }
-    .attack__damage{
-        @include flexible();
-        align-items: center;
-        flex-shrink:0;
-        font-size: 20px;
-        
-    }
-    .attack__cost, .attack__damage {
-        padding: 15px;
-    }
-    
 }
 
+.attack__cost {
+    display: flex;
+    align-items: center;
+    flex-shrink:0;
+}
+
+.attack__name {
+    font-size : 14px;
+    font-weight: bold;
+}
+.attack__details {
+    font-size: 10px;
+}
+
+.attack__damage{
+    display: flex;
+    align-items: center;
+    flex-shrink:0;
+    font-size: 20px;
+    
+}
+.attack__cost, .attack__damage {
+    padding: 15px;
+}
 
 // Statistics 
 
@@ -129,14 +126,14 @@ img {
     font-size: 10px;
     border-top: 2px solid black;
     margin: 0 5px;
-    .stat {
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 2px;
-        
-    }
+}
+.stat {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    
 }
 
 //Footer
