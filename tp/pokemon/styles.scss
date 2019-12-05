@@ -110,7 +110,8 @@ img {
 
     &__leafs {
         display: flex;
-        margin-right: 15px;
+        margin-right: 25px;
+        flex-basis: 110px;
 
         &-item {
             margin-right: 1px;
