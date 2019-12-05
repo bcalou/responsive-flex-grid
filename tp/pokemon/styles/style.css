@@ -7,15 +7,32 @@ body {
   border-width: 10px;
   border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
   overflow: hidden;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-family: 'verdana';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 * {
   box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
 
 .identity {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+
+.identity__name {
+  font-size: 20px;
+  font-weight: bold; }
+
+.identity__state {
+  font-size: 10px; }
+
+.identity__life {
+  color: red; }
 
 .image {
   display: flex; }
@@ -23,10 +40,59 @@ body {
 .image__content {
   border-style: solid;
   border-width: 5px;
-  border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
-  max-width: 100%; }
+  border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5; }
 
 .image, .identity {
-  margin: 0px 15px; }
+  margin: 5px 15px; }
+
+.characteristics {
+  background: linear-gradient(to right, #FDEC00, #7A751E);
+  font-size: 11px;
+  text-align: center;
+  padding: 3px 0;
+  margin: 0 20px; }
+
+.attacks__attack {
+  display: flex;
+  margin: 40px 0; }
+  .attacks__attack .attack__cost {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; }
+  .attacks__attack .attack__description .attack__name {
+    font-size: 14px;
+    font-weight: bold; }
+  .attacks__attack .attack__description .attack__details {
+    font-size: 10px; }
+  .attacks__attack .attack__damage {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 20px; }
+  .attacks__attack .attack__cost, .attacks__attack .attack__damage {
+    padding: 15px; }
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 10px;
+  border-top: 2px solid black;
+  margin: 0 5px; }
+  .stats .stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px; }
+
+.infos {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
+  font-size: 10px;
+  font-style: italic;
+  padding: 2px;
+  margin: 5px 8px; }
 
 /*# sourceMappingURL=style.css.map */

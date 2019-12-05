@@ -9,14 +9,21 @@ body {
     border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
     overflow: hidden;
     flex-wrap: wrap;
+    font-family: 'verdana';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+img {
+    max-width: 100%;
+  }
   
+// mixin for Display flex properties
 
 @mixin flexible(){
     display: flex;
@@ -31,10 +38,31 @@ body {
     justify-content: space-between;
 }
 
+// Header
+
+//Identity
+
 .identity{
     @include space-between();
     align-items: flex-end;
 }
+
+// Identity Texts
+
+.identity__name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.identity__state {
+    font-size: 10px;
+}
+.identity__life {
+    color: red;
+}
+
+//Image 
+
 .image {
     display: flex;
 }
@@ -42,9 +70,83 @@ body {
     border-style: solid;
     border-width: 5px;
     border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
-    max-width: 100%;
-}
-.image, .identity {
-    margin: 0px 15px;
 }
 
+// Margin for Image and Identity
+
+.image, .identity {
+    margin: 5px 15px;
+}
+
+//Characteristics 
+
+.characteristics {
+    background: linear-gradient(to right, #FDEC00, #7A751E);
+    font-size: 11px;
+    text-align: center;
+    padding: 3px 0;
+    margin: 0 20px;
+}
+
+//attacks
+
+.attacks__attack {
+    display: flex;
+    margin: 40px 0;
+    .attack__cost {
+        @include flexible();
+        align-items: center;
+        flex-shrink:0;
+    }
+    .attack__description {
+        .attack__name {
+            font-size : 14px;
+            font-weight: bold;
+        }
+        .attack__details {
+            font-size: 10px;
+        }
+    }
+    .attack__damage{
+        @include flexible();
+        align-items: center;
+        flex-shrink:0;
+        font-size: 20px;
+        
+    }
+    .attack__cost, .attack__damage {
+        padding: 15px;
+    }
+    
+}
+
+
+// Statistics 
+
+.stats {
+    @include space-between();
+    font-weight: bold;
+    font-size: 10px;
+    border-top: 2px solid black;
+    margin: 0 5px;
+    .stat {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2px;
+        
+    }
+}
+
+//Footer
+
+.infos {
+    border-width: 3px;
+    border-style:solid;
+    border-image: linear-gradient(to right, #FDEC00, #7A751E) 0.5;
+    font-size: 10px;
+    font-style: italic;
+    padding:2px;
+    margin: 5px 8px;
+}
