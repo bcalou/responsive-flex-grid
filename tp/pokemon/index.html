@@ -1,1 +1,73 @@
-À vous !
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/styles.scss" />
+    <title>Carte - Bulbizarre</title>
+</head>
+
+<body>
+
+    <section class="pokemon__container">
+        <header class="identity">
+            <div>
+                <p class="identity__evolution">Pokémon de base</p>
+                <h1 class="identity__name">Bulbizarre</h1>
+            </div>
+            <div>
+                <span class="identity__life">40 PV</span>
+                <img class="identity__type" src="../../assets/img/leaf.png" alt="Type feuille" />
+            </div>
+        </header>
+
+        <div class="image">
+            <img class="image__pokemon" src="../../assets/img/bulbizarre.jpg" alt="bulbizarre" />
+        </div>
+
+        <div class="descriptions">
+            <p class="descriptions__text">Pokémon Graine. Taille : 0,7m, poids: 6,9kg</p>
+        </div>
+    </section>
+
+    <section class="pokemon__container pokemon__container--last">
+        <section class="attacks">
+            <div class="attacks__attack attack">
+                <div class="attack__cost">
+                    <img src="../../assets/img/leaf.png" alt="Type feuille" />
+                    <img src="../../assets/img/leaf.png" alt="Type feuille" />
+                </div>
+                <div class="attack__description">
+                    <span class="attack__name">Vampigraine</span>
+                    <span class="attack__details">A moins que tous les dégâts infligés par cette attaque ne soient
+                        prévenus, vous pouvez retirer 1 marquer de dégât de Bulbizarre</span>
+                </div>
+                <p class="attack__damage">20</p>
+            </div>
+        </section>
+
+        <section class="capacities">
+            <div class="capacities__capacity capacity">
+                <p class="capacity__name">Faiblesse</p>
+                <img src="../../assets/img/fire.png" alt="Type feu" />
+            </div>
+            <div class="capacities__capacity capacity">
+                <p class="capacity__name">Résistance</p>
+            </div>
+            <div class="capacities__capacity capacity">
+                <p class="capacity__name">Coût de retraite</p>
+                <img src="../../assets/img/normal.png" alt="Type normal" />
+            </div>
+        </section>
+
+        <footer class="infos">
+            <p class="infos__text">
+                Il a une étrange graine planté sur son dos. Elle grandit avec lui depuis
+                sa naissance. NIV 13 No. 1
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+@import "reset.css";
+@import "./identity";
+@import "./image";
+@import "./descriptions";
+@import "./attacks";
+@import "./capacities";
+@import "./infos";
+
+@mixin landscape {
+    @media (min-aspect-ratio: 1/1) {
+        @content;
+    }
+}
+
+:root {
+    --gradient: linear-gradient(90deg,
+            rgba(235, 240, 10, 1) 0%,
+            rgba(117, 125, 17, 1) 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: yellowgreen;
+    border: 12px solid;
+    border-image: var(--gradient) 12;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include landscape {
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+.pokemon {
+    display: flex;
+    max-height: 100vh;
+
+    &__container {
+
+        @include landscape {
+            max-width: 50%;
+
+        }
+    }
+}

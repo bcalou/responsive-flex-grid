@@ -1,0 +1,24 @@
+@mixin landscape {
+    @media (min-aspect-ratio: 1/1) {
+        @content;
+    }
+}
+
+.image {
+    justify-content: center;
+    display: flex;
+    margin: 5px 15px;
+
+    @include landscape {
+        order: 1;
+    }
+
+
+    &__pokemon {
+        border: 5px solid;
+        align-self: center;
+        border-image: var(--gradient) 5;
+
+    }
+
+}

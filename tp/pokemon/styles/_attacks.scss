@@ -1,0 +1,37 @@
+.attacks {
+    padding: 10px;
+
+    &__attack {
+        display: flex;
+        align-items: center;
+
+    }
+
+}
+
+.attack {
+    &__description {
+        flex-shrink: 2;
+        margin: 5px;
+        flex-basis: 200px;
+    }
+
+    &__cost {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__details {
+        font-size: 16px;
+    }
+
+    &__damage {
+        font-size: 26px;
+    }
+
+}
