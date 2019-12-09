@@ -31,6 +31,22 @@ body {
     @include desktop {
         grid-template-columns: repeat(18, 1fr);
         grid-template-rows: repeat(7, 1fr);
+
+        @for $a from 1 through 7 {
+
+            article[data-period="#{$a}"] {
+                grid-row: #{$a};
+            }
+
+        }
+
+        @for $a from 1 through 18 {
+
+            article[data-group="#{$a}"] {
+                grid-column: #{$a};
+            }
+
+        }
     }
 }
 
@@ -51,22 +67,6 @@ body {
         &--#{$type} {
             background: $color;
         }
-    }
-
-}
-
-@for $a from 1 through 7 {
-
-    article[data-period="#{$a}"] {
-        grid-row: #{$a};
-    }
-
-}
-
-@for $a from 1 through 18 {
-
-    article[data-group="#{$a}"] {
-        grid-column: #{$a};
     }
 
 }

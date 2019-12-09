@@ -150,6 +150,81 @@ body {
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(7, 1fr);
   }
+  body article[data-period="1"] {
+    grid-row: 1;
+  }
+  body article[data-period="2"] {
+    grid-row: 2;
+  }
+  body article[data-period="3"] {
+    grid-row: 3;
+  }
+  body article[data-period="4"] {
+    grid-row: 4;
+  }
+  body article[data-period="5"] {
+    grid-row: 5;
+  }
+  body article[data-period="6"] {
+    grid-row: 6;
+  }
+  body article[data-period="7"] {
+    grid-row: 7;
+  }
+  body article[data-group="1"] {
+    grid-column: 1;
+  }
+  body article[data-group="2"] {
+    grid-column: 2;
+  }
+  body article[data-group="3"] {
+    grid-column: 3;
+  }
+  body article[data-group="4"] {
+    grid-column: 4;
+  }
+  body article[data-group="5"] {
+    grid-column: 5;
+  }
+  body article[data-group="6"] {
+    grid-column: 6;
+  }
+  body article[data-group="7"] {
+    grid-column: 7;
+  }
+  body article[data-group="8"] {
+    grid-column: 8;
+  }
+  body article[data-group="9"] {
+    grid-column: 9;
+  }
+  body article[data-group="10"] {
+    grid-column: 10;
+  }
+  body article[data-group="11"] {
+    grid-column: 11;
+  }
+  body article[data-group="12"] {
+    grid-column: 12;
+  }
+  body article[data-group="13"] {
+    grid-column: 13;
+  }
+  body article[data-group="14"] {
+    grid-column: 14;
+  }
+  body article[data-group="15"] {
+    grid-column: 15;
+  }
+  body article[data-group="16"] {
+    grid-column: 16;
+  }
+  body article[data-group="17"] {
+    grid-column: 17;
+  }
+  body article[data-group="18"] {
+    grid-column: 18;
+  }
 }
 
 .el {
@@ -187,106 +262,6 @@ body {
 }
 .el--otherNonMetal {
   background: #ce7e7e;
-}
-
-article[data-period="1"] {
-  grid-row: 1;
-}
-
-article[data-period="2"] {
-  grid-row: 2;
-}
-
-article[data-period="3"] {
-  grid-row: 3;
-}
-
-article[data-period="4"] {
-  grid-row: 4;
-}
-
-article[data-period="5"] {
-  grid-row: 5;
-}
-
-article[data-period="6"] {
-  grid-row: 6;
-}
-
-article[data-period="7"] {
-  grid-row: 7;
-}
-
-article[data-group="1"] {
-  grid-column: 1;
-}
-
-article[data-group="2"] {
-  grid-column: 2;
-}
-
-article[data-group="3"] {
-  grid-column: 3;
-}
-
-article[data-group="4"] {
-  grid-column: 4;
-}
-
-article[data-group="5"] {
-  grid-column: 5;
-}
-
-article[data-group="6"] {
-  grid-column: 6;
-}
-
-article[data-group="7"] {
-  grid-column: 7;
-}
-
-article[data-group="8"] {
-  grid-column: 8;
-}
-
-article[data-group="9"] {
-  grid-column: 9;
-}
-
-article[data-group="10"] {
-  grid-column: 10;
-}
-
-article[data-group="11"] {
-  grid-column: 11;
-}
-
-article[data-group="12"] {
-  grid-column: 12;
-}
-
-article[data-group="13"] {
-  grid-column: 13;
-}
-
-article[data-group="14"] {
-  grid-column: 14;
-}
-
-article[data-group="15"] {
-  grid-column: 15;
-}
-
-article[data-group="16"] {
-  grid-column: 16;
-}
-
-article[data-group="17"] {
-  grid-column: 17;
-}
-
-article[data-group="18"] {
-  grid-column: 18;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
