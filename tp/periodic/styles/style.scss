@@ -1,5 +1,11 @@
 @import './reset.scss';
 
+@mixin desktop {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
 $types: 'alkaliMetal',
 'lanthanide',
 'nobleGas',
@@ -15,6 +21,12 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
     padding: 10px;
+    font-size: 10px;
+
+    @include desktop {
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
 
 
@@ -22,6 +34,10 @@ body {
 .el {
     background: lightgray;
     height: 150px;
+
+    @include desktop {
+        height: 100px;
+    }
 
     @for $i from 1 through length($types) {
         $type: nth($types, $i);

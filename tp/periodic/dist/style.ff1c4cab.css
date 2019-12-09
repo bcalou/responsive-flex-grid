@@ -138,38 +138,50 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-gap: 10px;
   padding: 10px;
+  font-size: 10px;
+}
+@media (min-width: 1400px) {
+  body {
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 .el {
   background: lightgray;
   height: 150px;
 }
+@media (min-width: 1400px) {
+  .el {
+    height: 100px;
+  }
+}
 .el--alkaliMetal {
-  background: #4bcc00;
+  background: #00cc33;
 }
 .el--lanthanide {
-  background: #74cc00;
-}
-.el--nobleGas {
-  background: #00cc0a;
-}
-.el--transitionMetal {
-  background: #00cc0e;
-}
-.el--postTransitionMetal {
-  background: #0066cc;
-}
-.el--alkalineEarthMetal {
-  background: #cc2c00;
-}
-.el--actinide {
-  background: #cc6300;
-}
-.el--metalloid {
   background: #ccbb00;
 }
+.el--nobleGas {
+  background: #cc5800;
+}
+.el--transitionMetal {
+  background: #88cc00;
+}
+.el--postTransitionMetal {
+  background: #44cc00;
+}
+.el--alkalineEarthMetal {
+  background: #004ecc;
+}
+.el--actinide {
+  background: #0069cc;
+}
+.el--metalloid {
+  background: #00ccc2;
+}
 .el--otherNonMetal {
-  background: #cc3300;
+  background: #00a7cc;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
