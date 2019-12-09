@@ -1,0 +1,141 @@
+.card {
+    border: 12px solid;
+    border-image: linear-gradient(90deg,
+            rgba(231, 238, 90, 1) 0%,
+            rgba(188, 190, 26, 1) 100%) 12;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+
+    @media(min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+
+        .flexlargeright {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.flexlargeleft {
+    @media(min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .header {
+            order: +1;
+        }
+    }
+}
+
+.flexlargeright {
+    @media(min-width:1024px) {
+        margin-top: 15%;
+    }
+}
+
+.header {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__life {
+        align-items: center;
+        color: red;
+    }
+
+
+    &__evolution {
+        font-size: 0.8rem;
+    }
+
+    &__name {
+        font-size: 1.2rem;
+    }
+}
+
+.content {
+    margin: 5%;
+
+    &__image {
+        box-shadow: 3px 3px 3px black;
+    }
+
+    &__description {
+        font-style: italic;
+        border-radius: 5%;
+        background: -webkit-linear-gradient(left, #ffd65e 0%, #666666 100%);
+        padding: 5px;
+        margin: 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+.attack {
+    align-items: center;
+    margin: 5%;
+    display: flex;
+    flex-grow: 1;
+
+    &__elements {
+        flex-basis: 25%;
+    }
+
+    &__description {
+        flex-basis: 50%;
+    }
+
+    &__damages {
+        flex-basis: 25%;
+        text-align: end;
+    }
+
+    &__text {
+        font-size: 0.9rem;
+    }
+}
+
+
+.footer {
+    border-top: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    &__description {
+        border: 1px solid;
+        border-image: linear-gradient(90deg,
+                rgba(231, 238, 90, 1) 0%,
+                rgba(188, 190, 26, 1) 100%) 1;
+        font-size: 0.8rem;
+        text-align: center;
+        font-style: italic;
+        margin: 5px;
+
+        @media(min-width:1024px) {
+            border: 3px solid;
+            border-image: linear-gradient(90deg,
+                    rgba(231, 238, 90, 1) 0%,
+                    rgba(188, 190, 26, 1) 100%) 1;
+            font-size: 1rem;
+            font-style: normal;
+        }
+    }
+
+    &__weaknesslogo {
+        margin-left: 33%;
+    }
+
+    //  A MODIFIER
+    &__retreatlogo {
+        margin-left: 33%;
+    }
+
+    // A MODIFIER
+}
