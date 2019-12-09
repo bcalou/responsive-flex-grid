@@ -1,0 +1,36 @@
+@import './reset.scss';
+
+$types: 'alkaliMetal',
+'lanthanide',
+'nobleGas',
+'transitionMetal',
+'postTransitionMetal',
+'alkalineEarthMetal',
+'actinide',
+'metalloid',
+'otherNonMetal';
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+
+.el {
+    background: lightgray;
+    height: 150px;
+
+    @for $i from 1 through length($types) {
+        $type: nth($types, $i);
+
+        $color: hsl(random(255) 100% 40%);
+
+        &--#{$type} {
+            background: $color;
+        }
+    }
+
+}
