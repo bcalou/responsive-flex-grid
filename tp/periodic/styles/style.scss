@@ -1,5 +1,9 @@
 @import './reset.scss';
 
+* {
+    box-sizing: border-box;
+}
+
 @mixin desktop {
     @media (min-width: 1400px) {
         @content;
@@ -22,14 +26,13 @@ body {
     grid-gap: 10px;
     padding: 10px;
     font-size: 10px;
+    min-height: 100vh;
 
     @include desktop {
         grid-template-columns: repeat(18, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
     }
 }
-
-
 
 .el {
     background: lightgray;
@@ -41,12 +44,29 @@ body {
 
     @for $i from 1 through length($types) {
         $type: nth($types, $i);
+        $index: index($types, $type);
+        $color: hsl($index* ((360deg/length($types))) 45% 65%);
 
-        $color: hsl(random(255) 100% 40%);
 
         &--#{$type} {
             background: $color;
         }
+    }
+
+}
+
+@for $a from 1 through 7 {
+
+    article[data-period="#{$a}"] {
+        grid-row: #{$a};
+    }
+
+}
+
+@for $a from 1 through 18 {
+
+    article[data-group="#{$a}"] {
+        grid-column: #{$a};
     }
 
 }
