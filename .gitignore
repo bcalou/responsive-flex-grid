@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.cache/
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
