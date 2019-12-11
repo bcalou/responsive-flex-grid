@@ -1,5 +1,11 @@
 @import 'reset.css';
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 :root {
   --gradient: linear-gradient(
     90deg,
@@ -29,6 +35,36 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Verdana;
+
+  @include landscape {
+    justify-content: center;
+  }
+}
+
+/* pokemon */
+
+.pokemon {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @include landscape {
+    flex-direction: row;
+    flex-grow: 0;
+  }
+}
+
+.pokemon__part {
+  display: flex;
+  flex-direction: column;
+
+  @include landscape {
+    flex-basis: 50%;
+  }
+
+  &:last-child {
+    flex-grow: 1;
+  }
 }
 
 /* identity */
@@ -58,6 +94,10 @@ body {
 
 .image {
   margin: 2px 16px;
+
+  @include landscape {
+    order: -1;
+  }
 }
 
 .image__content {
@@ -74,6 +114,10 @@ body {
   margin: 0 25px;
   font-style: italic;
   line-height: 16px;
+
+  @include landscape {
+    margin: 2px 16px 0;
+  }
 }
 
 /* attacks */
@@ -145,4 +189,8 @@ body {
   border: 2px solid;
   border-image: var(--gradient) 2;
   font-style: italic;
+
+  @include landscape {
+    margin-bottom: 0;
+  }
 }

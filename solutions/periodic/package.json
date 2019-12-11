@@ -1,0 +1,19 @@
+{
+  "name": "periodic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.23.7"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  }
+}
