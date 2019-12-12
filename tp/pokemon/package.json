@@ -1,0 +1,26 @@
+{
+  "name": "responsive-flex-grid",
+  "version": "1.0.0",
+  "description": "## Partie 1 : Flexbox",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "serve": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcalou/responsive-flex-grid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcalou/responsive-flex-grid/issues"
+  },
+  "homepage": "https://github.com/bcalou/responsive-flex-grid#readme"
+}
