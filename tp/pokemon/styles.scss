@@ -1,0 +1,139 @@
+@mixin landscape {
+    @media (min-aspect-ratio: 1/1) {
+        @content;
+    }
+}
+
+.selector {
+    color: red;
+
+    @include landscape {
+        color: blue;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    @include landscape {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.card   {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+min-height: 100%;
+    border : 7px solid;
+    border-image:linear-gradient(90deg, rgba(210,250,251,1) 0%, rgba(81,218,207,1) 35%, rgba(65,170,168,1) 100%)8;
+    background: #d2fafb;
+
+    @include landscape {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.little-text{
+    font-size: 10px;
+}
+
+.top-div    {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px 0px 15px;
+    
+}
+
+.top-div-left{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.top-div-right{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.image  {
+    border : 7px solid;
+    border-image:linear-gradient(90deg, rgba(210,250,251,1) 0%, rgba(81,218,207,1) 35%, rgba(65,170,168,1) 100%)8;
+    margin: 15px 15px 15px 15px;
+}
+
+.description-card{
+    display: flex;
+    background: #51dacf;
+    color: black;
+    justify-content: center;
+    padding: 5px;
+    margin: 0 25px 15px 25px;
+}
+
+.description-caracteristics{
+    display: flex;
+    margin: 15px;
+    justify-content: space-around;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.bold-text-big{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.description-caracteristics-leaf{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.description-caracteristics-text{
+    display: flex;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.description-caracteristics-number{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.line{
+    border:1px solid black;
+    margin: 15px 15px 0px 15px;
+}
+
+.description-profil{
+    margin: 0px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-profil-bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-footer{
+    border : 2px solid;
+    border-image:linear-gradient(90deg, rgba(210,250,251,1) 0%, rgba(81,218,207,1) 35%, rgba(65,170,168,1) 100%)8;
+    margin: 0 15px 15px 15px;
+}
