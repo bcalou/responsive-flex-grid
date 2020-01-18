@@ -15,8 +15,8 @@
 }
 
 * {
-  box-sizing: border-box;
-}
+   box-sizing: border-box;
+ }
 
 html,
 body {
@@ -32,7 +32,6 @@ body {
   background-color: yellowgreen;
   border: 12px solid;
   border-image: var(--gradient) 12;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: Verdana;

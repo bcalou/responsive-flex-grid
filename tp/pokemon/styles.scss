@@ -1,0 +1,183 @@
+@import "reset.css";
+
+:root {
+  --gradient: linear-gradient(
+                  90deg,
+                  rgba(255, 237, 0, 1) 0%,
+                  rgb(119, 115, 30) 100%
+  );
+}
+
+// Définition du mode paysage
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+
+body {
+  overflow: hidden;
+  // Etendre le body jusqu'à tout en bas de l'écran
+  min-height: 100vh;
+  // limiter le body à ce qui apparaît sur l'écran
+  display: flex;
+  flex-direction: column;
+  //End
+  font-family: Verdana;
+  font-size: 12px;
+  border: 10px solid;
+  border-image: var(--gradient) 12;
+  background: yellowgreen;
+  justify-content: space-between;
+
+  @include landscape {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+// VERSION DESKTOP
+.desk-part1 {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+
+    & :nth-child(1) {order: 1}
+  }
+}
+
+.desk-part2 {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-top: 10%;
+  }
+}
+
+
+//HEADER
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+
+
+    & > h1 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    & > nav {
+      color: red;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+// SECTION IMAGE
+.image {
+  display: flex;
+  flex-direction: column;
+
+  & > nav {
+    display: flex;
+    justify-content: center;
+    border: var( --gradient) 5px solid;
+  }
+
+  & > p {
+    text-align: center;
+    background: var( --gradient);
+  }
+}
+
+
+// ATTACKS
+
+.attacks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+
+  & > &__leaf {
+    display: flex;
+    flex-shrink: 0;
+    //Problème gestion image
+    width: 20px;
+    height: 20px;
+  }
+
+  & > &__text {
+    flex-shrink: 1;
+    flex-basis: 60%;
+  }
+}
+
+hr {
+  //Pour afficher correctement pour hr
+  width: 100%;
+  border: 0.5px solid black;
+}
+
+//DETAILS
+
+.details {
+  display: flex;
+  justify-content: space-between;
+
+  & > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+hr {
+  //Pour afficher correctement pour hr
+  width: 100%;
+  border: 0.5px solid black;
+}
+
+// SECTION DETAILS
+
+.details {
+  display: flex;
+  justify-content: space-between;
+
+  & > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// FOOTER
+
+footer {
+  display: flex;
+  justify-content: center;
+  & > p {
+    text-align: center;
+    border: 3px solid goldenrod;
+  }
+}
