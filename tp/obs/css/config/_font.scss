@@ -1,0 +1,42 @@
+@font-face {
+    font-family: titleBold;
+    font-size: 14px;
+    src: url(/assets/fonts/Oswald-bold.woff2), ;
+}
+
+
+
+@font-face {
+    font-family: subtitle;
+    src: url(/assets/fonts/SourceSerifPro-regular.woff2), ;
+}
+
+@font-face {
+    font-family: SourceSerifPro-bold;
+    src: url(/assets/fonts/SourceSerifPro-bold.woff2), ;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    font-family: SourceSerifPro-bold;
+
+
+
+    & :nth-child(1) {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+
+p {
+    font-family: Arial;
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.twoInfo__article p {
+    color: black;
+    font-size: 14px;
+}

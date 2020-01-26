@@ -1,0 +1,154 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+
+    @include medium {
+        flex-wrap: wrap;
+    }
+
+    @include large {
+        margin-bottom: 3rem;
+    }
+
+    &__burger {
+        max-width: 10%;
+        min-width: 7%;
+
+        & img:nth-child(2) {
+            display: none;
+        }
+
+        @include medium {
+            min-width: 3%;
+        }
+
+        @include large {
+            display: flex;
+            align-items: center;
+            min-width: 1%;
+
+            & img:nth-child(1) {
+                margin-right: 15px;
+                max-width: 80%;
+            }
+
+            & img:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+
+    &__logo {
+        min-width: 30%;
+
+        @include medium {
+            order: -1;
+            min-width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-bottom: 20px;
+            justify-content: center;
+            text-align: center;
+
+            & img {
+                max-width: 60%;
+            }
+        }
+
+        @include large {
+            & img {
+                max-width: 35%;
+            }
+        }
+    }
+
+    &__menu {
+
+        display: none;
+
+        @include medium {
+            display: block;
+            display: block;
+            min-width: 50%;
+            margin-left: 15%;
+
+            & ul {
+                display: flex;
+                min-width: 80%;
+                justify-content: space-evenly;
+                font-family: titleBold;
+                text-transform: uppercase;
+
+                @include large {
+                    min-width: 80%;
+                    margin: 0 auto;
+                    justify-content: space-between;
+
+                }
+            }
+        }
+    }
+
+    .list {
+
+
+        &__item {
+
+            @include medium {
+
+                &--hide {
+                    display: none;
+                }
+            }
+
+            @include large {
+                padding: 5px;
+
+                &--hide {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    &__last {
+        display: flex;
+        min-width: 40%;
+        justify-content: space-between;
+        align-items: center;
+
+        @include medium {
+            max-width: 40%;
+            min-width: unset;
+        }
+
+        & .login {
+            background: #fed500;
+            padding: 8px;
+            font-family: SourceSerifPro-bold;
+            font-size: 0.9rem;
+            border-radius: .3rem;
+        }
+
+        & .register {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+
+            & p {
+                color: black;
+                margin-left: 5px;
+            }
+
+        }
+    }
+}
