@@ -1,1 +1,284 @@
-<!-- À vous ! -->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.scss">
+    <title>TP - flex & grid - Obs</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/imgs/icons/logo.svg" alt="logo">
+        </div>
+        <div class="header__Part part">
+            <div class="part__left left">
+                <div class="left__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img class="mobileLogo" src="./assets/imgs/icons/logo.svg" alt="secondLogo">
+                <div class="left__search">
+                    <img src="./assets/imgs/icons/search.svg" alt="search">
+                </div>
+            </div>
+            <ul class="part__middle">
+                <li>POLITIQUE</li>
+                <li>MONDE</li>
+                <li>ÉCONOMIE</li>
+                <li>CULTURE</li>
+                <li>OPINIONS</li>
+                <li>DÉBATS</li>
+                <li>TENDANCES</li>
+                <li>2049</li>
+                <li>VIDÉOS</li>
+                <li>PHOTOS</li>
+            </ul>
+            <div class="part__right right">
+                <div class="right__user">
+                    <img src="./assets/imgs/icons/user.svg" alt="user">
+                    <a href="#">M'identifier</a>
+                </div>
+                <div class="right__subscribe">
+                    <a href="#">Je m'abonne</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__primaryInfo primaryInfo">
+            <div class="primaryInfo__image">
+                <img src="assets/imgs/article1.jpg" alt="Un retraité manifestant">
+            </div>
+            <div class="primaryInfo__informationsContainer primaryContainer">
+                <h2 class="primaryContainer__title">Ces 10 graphiques éclairent l'emploi des seniors (et ce n'est pas
+                    réjouissant)</h2>
+                <p class="primaryContainer__meta">Économie - Publié il y 2 heures</p>
+            </div>
+        </section>
+        <section class="main__secondInfo secondInfo">
+            <div class="secondInfo__header headerSecond">
+                <div class="headerSecond__borderTop"></div>
+                <h2 class="headerSecond__title">FIL INFO</h2>
+                <div class="headerSecond__borderTop"></div>
+            </div>
+            <div class="secondInfo__body bodySecond">
+                <div class="bodySecond__items">
+                    <p>20:20</p>
+                    <p>Municipales à Paris: avec Hidalgo, 10 candidats pour un jeu d'alliances incertain</p>
+                </div>
+                <div class="bodySecond__items">
+                    <p>19:50</p>
+                    <p>Violences policières: Macron fait pression sur l'Intérieur, les syndicats agacés</p>
+                </div>
+                <div class="bodySecond__items">
+                    <p>19:45</p>
+                    <p>Dopage: le fondeur autrichien Dominik Baldauf condamné à 5 mois de prison avec sursis</p>
+                </div>
+                <div class="bodySecond__items noBorder">
+                    <p>19:45</p>
+                    <p>La guerre est déclarée entre le</p>
+                </div>
+            </div>
+            <div class="secondInfo__link">
+                <a href="#">TOUT VOIR</a>
+            </div>
+        </section>
+        <section class="main__thirdInfo thirdInfo">
+            <div class="thirdInfo__article">
+                <div>
+                    <img class="thirdInfo__image" src="assets/imgs/article2.jpg" alt="Reforme des retraites">
+                </div>
+                <div class="thirdInfo____informationsContainer thirdContainer">
+                    <h2 class="thirdContainer__title">Comment la réforme des retraites a été dévoyée</h2>
+                    <p class="thirdContainer__meta">Edito - Publié il y 14 heures</p>
+                </div>
+            </div>
+            <div class="thirdInfo__article">
+                <div>
+                    <img class="thirdInfo__image" src="assets/imgs/article3.jpg" alt="Reforme des retraites">
+                </div>
+                <div class="thirdInfo____informationsContainer thirdContainer">
+                    <h2 class="thirdContainer__title">Ségolène Royal estime qu’elle&nbsp;a été licenciée de sa fonction
+                        d’ambassadrice des pôles</h2>
+                    <p class="thirdContainer__meta">Politique - Publié il y 3 heures</p>
+                </div>
+            </div>
+            <div class="thirdInfo__article">
+                <div>
+                    <img class="thirdInfo__image" src="assets/imgs/article4.jpg" alt="Reforme des retraites">
+                </div>
+                <div class="thirdInfo____informationsContainer thirdContainer">
+                    <h2 class="thirdContainer__title">A quoi ressembleront les océans en 2049 ? Suivez notre conférence
+                        en direct</h2>
+                    <p class="thirdContainer__meta">2049 - Publié il y 2 heures</p>
+                </div>
+            </div>
+            <div class="thirdInfo__article">
+                <div>
+                    <img class="thirdInfo__image" src="assets/imgs/article5.jpg" alt="Reforme des retraites">
+                </div>
+                <div class="thirdInfo____informationsContainer thirdContainer">
+                    <h2 class="thirdContainer__title">
+                        <span>
+                            <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                        </span>
+                        Comment l’avion abattu à Téhéran fragilise le régime des mollahs
+                    </h2>
+                    <p class="thirdContainer__meta">Monde - Publié il y 6 heures</p>
+                </div>
+            </div>
+            <div class="thirdInfo__article">
+                <div>
+                    <img class="thirdInfo__image" src="assets/imgs/article6.jpg" alt="Reforme des retraites">
+                </div>
+                <div class="thirdInfo____informationsContainer thirdContainer">
+                    <h2 class="thirdContainer__title">
+                        <span>
+                            <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                        </span>
+                        Elif Shafak, star du roman turc et bête noire d’Erdogan</h2>
+                    <p class="thirdContainer__meta">Romans - Publié il y 4 heures</p>
+                </div>
+            </div>
+        </section>
+        <section class="main__fourthInfo fourthInfo">
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article7.jpg" alt="Censure de Mélanchon">
+                <h2>La motion de censure de Mélenchon fait pschitt</h2>
+            </div>
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article8.jpg" alt="Censure de Mélanchon">
+                <h2>
+                    <span>
+                        <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                    </span>
+                    Pourquoi la réforme des retraites vous fera travailler plus longtemps</h2>
+            </div>
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article9.jpg" alt="Censure de Mélanchon">
+                <h2>La folle tournée médiatique de Carlos Ghosn</h2>
+            </div>
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article10.jpg" alt="Censure de Mélanchon">
+                <h2>
+                    <span>
+                        <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                    </span>
+                    En Iran, la légitimité perdue des mollahs</h2>
+            </div>
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article11.jpg" alt="Censure de Mélanchon">
+                <h2>Benoît XVI retire son nom d’un livre controversé</h2>
+            </div>
+            <div class="fourthInfo__article">
+                <img src="assets/imgs/article12.jpg" alt="Censure de Mélanchon">
+                <h2>
+                    <span>
+                        <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                    </span>
+                    Affaire Preynat : pourquoi un procès 30 ans après les faits</h2>
+            </div>
+        </section>
+        <section class="main__fiveInfo fiveInfo">
+            <div class="fiveInfo__containerTxt fiveInfoTxt">
+                <h4 class="fiveInfoTxt__title">L'OBS EN NUMÉRIQUE</h4>
+                <p class="fiveInfoTxt__explain">Web + tablette + mobile<br>à partir de 1€</p>
+                <a class="fiveInfoTxt__link" href="#">Je m'abonne</a>
+            </div>
+            <img class="fiveInfo__img--1" src="./assets/imgs/ad/cover1.png" alt="ad 1">
+            <img class="fiveInfo__img--2" src="./assets/imgs/ad/cover2.png" alt="ad 2">
+        </section>
+        <section class="main__sixInfo sixInfo">
+            <div class="titleMeeting">
+                <div class="titleMeeting__decoTitle"></div>
+                <h1>LES RENDEZ-VOUS DE L'OBS</h1>
+                <div class="titleMeeting__decoTitle"></div>
+            </div>
+            <div class="containerLastArticles">
+                <div class="thirdInfo__article">
+                    <div>
+                        <img class="thirdInfo__image" src="./assets/imgs/rdv1.png" alt="Reforme des retraites">
+                    </div>
+                    <div class="thirdInfo____informationsContainer thirdContainer">
+                        <h2 class="thirdContainer__title">
+                            <span>
+                                <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                            </span>
+                            Gagnez vos places pour la pièce « An Iliad » au théâtre du
+                            Rond-Point
+                        </h2>
+                        <p class="thirdContainer__meta">Club Abonnés - Publié il y 1 jour</p>
+                    </div>
+                </div>
+                <div class="thirdInfo__article middleArticle">
+                    <div>
+                        <img class="thirdInfo__image" src="assets/imgs/rdv2.jpg" alt="Reforme des retraites">
+                    </div>
+                    <div class="thirdInfo____informationsContainer thirdContainer">
+                        <h2 class="thirdContainer__title">
+                            <span>
+                                <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                            </span>
+                            Gagnez vos places pour l’exposition hommage à Vladimir Velickovic
+                        </h2>
+                        <p class="thirdContainer__meta">Club Abonnés - Publié il y 1 jour</p>
+                    </div>
+                </div>
+                <div class="thirdInfo__article">
+                    <div>
+                        <img class="thirdInfo__image" src="assets/imgs/rdv3.jpg" alt="Reforme des retraites">
+                    </div>
+                    <div class="thirdInfo____informationsContainer thirdContainer">
+                        <h2 class="thirdContainer__title">
+                            <span>
+                                <img class="subscriber" src="./assets/imgs/icons/subscriber.svg" alt="subscriber">
+                            </span>
+                            Gagnez vos places de cinéma pour le film « Revenir » de Jessica
+                            Palud
+                        </h2>
+                        <p class="thirdContainer__meta">Club Abonnés - Publié il y 1 jour</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__menu">
+            <ul>
+                <li>POLITIQUE</li>
+                <li>MONDE</li>
+                <li>ÉCONOMIE</li>
+                <li>CULTURE</li>
+                <li>OPINIONS</li>
+                <li>DÉBATS</li>
+                <li>VIDÉOS</li>
+                <li>PHOTOS</li>
+            </ul>
+        </div>
+        <div class="footer__informations">
+            <ul>
+                <li>TéléObs</li>
+                <li>BibliObs</li>
+                <li>"O"</li>
+                <li>Rule 89</li>
+                <li>Newsletters</li>
+                <li>Services</li>
+                <li>Index</li>
+                <li>RSS</li>
+                <li>Plan du site</li>
+                <li>Mentions légales</li>
+                <li>Copyright</li>
+                <li>Publicité</li>
+                <li>Politique de confidentialité</li>
+                <li>Contact</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
