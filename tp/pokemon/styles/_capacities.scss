@@ -1,0 +1,16 @@
+.capacities {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin: 0 5px;
+    padding-top: 3px;
+}
+
+.capacity {
+    text-align: center;
+
+    &__name {
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
